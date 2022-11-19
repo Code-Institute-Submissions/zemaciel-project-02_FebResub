@@ -61,28 +61,12 @@ ul{
     border: 2px solid #A20C0C;
     cursor: pointer;
   }
-
-
-
-
-
-
-
-/* 
-
-  .question-button,
-#start-over {
-    font-size: 1.3rem;
-    background-color: white;
-    border: 2px solid #A20C0C;
-    color: #A20C0C;
-    padding: 0.8rem;
-    margin-top: 1.2rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
+  .blocked {
+    display: none;
 }
 
-.question-button:hover,
-#start-over:hover {
-    background-color: #A20C0C;
-} */
+.blocked li:hover {
+    display: none;
+}
+
+
