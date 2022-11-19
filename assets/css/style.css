@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700&family=Special+Elite&display=swap');
 body {
     background-color:#F4F4F4;
     display: flex;
@@ -35,7 +35,7 @@ p {
 .quiz-area {
     background-color: white;
     box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 700px
+    width: 500px
     overflow: hidden;
     padding: 10px
 }
@@ -46,5 +46,43 @@ ul{
   }
   ul li{
     font-size: 1.2rem;
-    margin: 1rem 0;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    background-color: white;
+    border: 1px solid #222222;
+    color: #222222;
+    padding: 0.7rem;
+    margin: 0.7rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
   }
+
+  ul li:hover{
+    border: 2px solid #A20C0C;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+/* 
+
+  .question-button,
+#start-over {
+    font-size: 1.3rem;
+    background-color: white;
+    border: 2px solid #A20C0C;
+    color: #A20C0C;
+    padding: 0.8rem;
+    margin-top: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.question-button:hover,
+#start-over:hover {
+    background-color: #A20C0C;
+} */
