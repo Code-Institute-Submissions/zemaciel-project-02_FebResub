@@ -175,12 +175,7 @@ function gameOver() {
     scoreCard.textContent = "Game Over"
     numQuiz.textContent = ""
 
-    let pont = ''
-    pontos == 0 ? pont = 'point' : pont = 'points'
-
-    quote.textContent   = "You scored " + pontos + " " + pont
-
-    message.textContent = "ou scored " + pontos + " " + pont
+    message.textContent = "Your score is " + points
 
     a.textContent = ""
     b.textContent = ""
@@ -198,5 +193,5 @@ function gameOver() {
     setTimeout(function() {
         points = 0 // zerar placar
         location.reload();
-    }, 2000)
+    }, 6000)
 }
