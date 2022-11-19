@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8c53bc7b65.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Movie Quotes Quiz</title>
-</head>
-<body>
-    <main class="main-container">
-        <h1 class="heading">
-            <i class="fa-solid fa-film"></i> Movie Quotes
-            <span id="red">Quiz</span>
-        </h1>
-    
-        <div id="description"> 
-            <p>Take this to test your knowledge of 
-                famous quotes from movies.</p>
-    
-        </div>
 
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-          <h2 id="quote">Movie Quote</h2>
-          <ol>
-            <li  id="a" class="movie">
-              Movie Name
-            </li>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8c53bc7b65.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Movie Quotes Quiz</title>
+</head>
+
+<body>
+
+  <!-- Intro Area - Does not change -->
+
+  <main class="main-container">
+    <div id="game-title">
+    <h1 class="heading">
+      <i class="fa-solid fa-film"></i> Movie Quotes
+      <span id="red">Quiz</span>
+    </h1>
+    </div>
+
+    <!-- Quiz Game Area -->
+
     
-            <li  id="b" class="movie">
-                Movie Name
-              </li>
-    
-              <li  id="c" class="movie">
-                Movie Name
-              </li>
-    
-              <li  id="d" class="movie">
-                Movie Name
-              </li>
-    
-          </ol>
-        </div>
-    <a href="test.html">Test page</a>
-    
+    <div class="quiz_area" id="quiz">
+
+      <div id="description">
+        <p>
+          Take this to test your knowledge of
+          famous quotes from movies.
+        </p>
       </div>
-      </main>
-    
-    
-      <script src="script.js"></script>
       
-    </body>
-    </html>
+      <div class="quiz-header">
+        <h2 id="title">Movie Quote</h2>
+        <ul>
+          <li id="a" class="film"></li>
+          <li id="b" class="film"></li>
+          <li id="c" class="film"></li>
+          <li id="d" class="film"></li>
+        </ul>
+      </div>
+      <a href="test.html">Test page</a>
+
+    </div>
+
+
+  </main>
+
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
