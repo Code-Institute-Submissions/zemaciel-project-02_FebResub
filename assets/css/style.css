@@ -1,72 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700&family=Special+Elite&display=swap');
+
 body {
-    background-color:#F4F4F4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+  background-image: url(../images/paper.jpg);
+  background-repeat: repeat;
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
 }
 
-.logo {width: 100px;}
+#numQuiz {
+  display: none;
+}
 
-#red {color:#A20C0C}
+#introDescription {
+  padding: 0 20px;
+  margin-bottom: 15px;
+
+}
+
+#red {
+  color: #A20C0C
+}
 
 h1 {
-    font-family: 'Special Elite', serif;
-    font-weight: 400;
-    font-size: 3rem;
-    color: #222222;
+  font-family: 'Special Elite', serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #222222;
+  padding: 10px;
+  margin-top: 20px;
 }
+
 h2 {
-    font-family: 'Special Elite', serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #222222;
-    
+  font-family: 'Special Elite', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #222222;
+
 }
+
 p {
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    color: #222222;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #222222;
+}
+
+#quote {
+  text-align: center;
+  padding: 0 20px;
+  margin: 25px 5px;
+  line-height: 1.4;
 }
 
 .quiz-area {
-    background-color: white;
-    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-    width: 500px
-    overflow: hidden;
-    padding: 10px
+  background-color: white;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 500px
+    /* overflow: hidden; */
+    padding: 10px;
+  margin: 0, 10px, 0, 10px;
+  align-items: center;
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
+.quoteHeader h2 {
+  padding: 10px;
+  border-radius: 0.5;
+  border: 1px solid #222222;
+
+}
+
+.message {
+  /* border-top-style: double; */
+  border-top: 4px double #A20C0C;
+  margin: 20px;
+  padding-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+#score_card {
+  font-family: 'Special Elite', serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #A20C0C;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  background-color: white;
+  border: 1px solid #222222;
+  color: #222222;
+  padding: 0.7rem;
+  margin: 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.blocked {
+  display: none;
+}
+
+.blocked li:hover {
+  display: none;
+}
+
+@media (hover: hover) {
+  ul li:hover {
+    border: 2px solid #A20C0C;
+    cursor: pointer;
   }
-  ul li{
-    font-size: 1.2rem;
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  #quote {}
+
+  h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    line-height: 1.4;
+    background-color: rgba(255, 255, 255, 0.793);
+    border: #222222 0.5px solid;
+  }
+
+  ul li {
+    font-size: 1rem;
     font-family: Lato, sans-serif;
     font-weight: 300;
     background-color: white;
     border: 1px solid #222222;
     color: #222222;
-    padding: 0.7rem;
-    margin: 0.7rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+
   }
 
-  ul li:hover{
-    border: 2px solid #A20C0C;
-    cursor: pointer;
+  .message {
+    margin: 10px;
+    padding-top: 10px;
+
   }
-  .blocked {
-    display: none;
+
 }
-
-.blocked li:hover {
-    display: none;
-}
-
-
