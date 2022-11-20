@@ -13,6 +13,12 @@ body {
   margin: 0;
 }
 
+p {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #222222;
+}
+
 #numQuiz {
   display: none;
 }
@@ -20,7 +26,13 @@ body {
 #introDescription {
   padding: 0 20px;
   margin-bottom: 15px;
+  
+}
 
+.introText {
+  font-family: Lato, sans-serif;
+  font-weight: 500;
+  color: #626161;
 }
 
 #red {
@@ -30,7 +42,7 @@ body {
 h1 {
   font-family: 'Special Elite', serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #222222;
   padding: 10px;
   margin-top: 20px;
@@ -39,16 +51,11 @@ h1 {
 h2 {
   font-family: 'Special Elite', serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #222222;
 
 }
 
-p {
-  font-family: Lato, sans-serif;
-  font-weight: 700;
-  color: #222222;
-}
 
 #quote {
   text-align: center;

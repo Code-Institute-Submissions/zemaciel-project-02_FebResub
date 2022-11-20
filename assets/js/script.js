@@ -136,7 +136,7 @@ let q11 = {
     filmB: "The Secret Garden",
     filmC: "Citizen Kane",
     filmD: "Gone with the Wind",
-    correct: "Rosebud",
+    correct: "Citizen Kane",
 }
 
 
