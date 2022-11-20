@@ -122,6 +122,10 @@ ul li {
   display: none;
 }
 
+.fa-linkedin, .fa-globe {
+    color: #222222;
+}
+
 @media (hover: hover) {
   ul li:hover {
     border: 2px solid #A20C0C;
