@@ -6,6 +6,42 @@
 [Live Site](https://zemaciel.github.io/project-02/)
 
 This website is a Quiz Game produced as the Second Portfolio Project (JavaScript Essentials) for the Diploma in Full Stack Software Development course at [Code Institute](https://codeinstitute.net/ie/).
+<br>
+<br>
+<br>
+
+# Table of content
+
+<!-- TOC start -->
+- [Movie Quotes Quiz](#movie-quotes-quiz)
+  * [Site Goals](#site-goals)
+  * [Design](#design)
+    + [Colours](#colours)
+    + [Typography](#typography)
+    + [Logo and Favicon](#logo-and-favicon)
+  * [Existing Features](#existing-features)
+    + [Heading](#heading)
+    + [Game Area](#game-area)
+    + [EndGame](#endgame)
+    + [Footer](#footer)
+  * [Future Features](#future-features)
+    + [Improve feedback for correct and incorrect answers](#improve-feedback-for-correct-and-incorrect-answers)
+    + [Improve the design ](#improve-the-design)
+    + [Player name and sharing score](#player-name-and-sharing-score)
+  * [Testing](#testing)
+    + [HTML Validator](#html-validator)
+    + [CSS Validator](#css-validator)
+    + [Lighthouse Testing](#lighthouse-testing)
+  * [Main Languages and Applications Used](#main-languages-and-applications-used)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    + [Quiz Tutorials and Codes](#quiz-tutorials-and-codes)
+    + [Javascript Learning Resources](#javascript-learning-resources)
+    + [Other learning resources:](#other-learning-resources)
+    + [Movie Quotes](#movie-quotes)
+  * [Acknowledgements ](#acknowledgements)
+<!-- TOC end -->
+
 
 ## Site Goals
 The main goal is to test the users' knowledge of famous movie quotes. Hence, the site displays a line with a movie quotation and four boxes underneath, each containing a movie title, where only one corresponds to the correct answer. The user is asked to match 10 quotes.
