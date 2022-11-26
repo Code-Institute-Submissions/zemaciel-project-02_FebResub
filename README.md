@@ -145,6 +145,7 @@ I have researched several online quizzes developed in JavaScript and quiz tutori
 
 ### Other learning resources:
 * [Kevin Powel, Dealing with hover on mobile](https://www.youtube.com/watch?v=uuluAyw9AI0)
+* [Github Pages website favicon not showing](https://stackoverflow.com/questions/46163065/github-pages-website-favicon-not-showing)
 
 * [MDM](https://developer.mozilla.org/en-US/)
 * [W3 Schools](https://www.w3schools.com/)
