@@ -1,108 +1,159 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome zemaciel,
+# Movie Quotes Quiz
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![](/assets/readme/responsive.png)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Live Site](https://zemaciel.github.io/project-02/)
 
-## Gitpod Reminders
+This website is a Quiz Game produced as the Second Portfolio Project (JavaScript Essentials) for the Diploma in Full Stack Software Development course at [Code Institute](https://codeinstitute.net/ie/).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Site Goals
+The main goal is to test the users' knowledge of famous movie quotes. Hence, the site displays a line with a movie quotation and four boxes underneath, each containing a movie title, where only one corresponds to the correct answer. The user is asked to match 10 quotes.
+<br>There are also two areas exhibiting information about the game. One is a counter, indicating the number of the current question and the number of total questions, and the other is a score showing how many points the user gets. The site gives 10 points for each correct answer.
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## Design
+The idea behind this website's modest and unpretentious design is to evoke the appearance of a sheet of pager in the typewriting machine of a  screenplay writer. 
+The background image displays the texture of a sheet of paper, and the heading font looks like a typewriting machine.
+<br>Following the same concept, the colours are also limited to red and black, the only colour options for one using a typewriter, and white. 
+Everything is arranged in a single column, which is simple to read and display on different screen devices. 
 
-Another blue button should appear to click: _Open Browser_.
+### Colours
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Dark Grey: #222222 
+* Red: #A20C0C
+<br>
+![](/assets/readme/color.png)
 
-A blue button should appear to click: _Make Public_,
+### Typography
+There are only two font families in use on this website. Special Elite, which resembles the typography of an old-typewrite machine font,  is used for the headings, and Lato, a sans-serif font with good legibility, is used in the smaller lines of text.<br>
+![](/assets/readme/typography.png)
 
-Another blue button should appear to click: _Open Browser_.
+### Logo and Favicon
+* The element for the logo is just an icon from [Font Awesome](https://fontawesome.com/).
+* The favicon is the same icon inside a speech bubble I designed on Adobe Illustrator and exported as favicon using [favicon.io](https://favicon.io/)
+<br>![favicon](/assets/readme/icon.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+## Existing Features
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Heading
+The heading contains the title of the page and an icon. This section is not modified during the game. 
+In small-screen devices, the icon is not displayed. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Game Area
+This section contains the quiz itself. It is constituted of the following:
+a quote (question)
+four movie titles (alternatives)
+number of the current quiz and total of questions
+scorecard (displayed after the first quiz is answered)
 
-------
+The user is asked to match 10 quotes to the famous movie they are from. 
+The quotes and film titles are listed on the javascript file. Each movie quote has a multiple-choice of four possible movie titles. 
+Underneath, the number of the current question and the total of questions is displayed, indicating the game's progress.
+After the first quiz, a scorecard shows how many points the user has got— each question is worth 10 points. 
+Once the user selects an alternative, the quiz advances to the next question until the end. 
 
-## Release History
+### EndGame
+When the users  anwsers the 10th quiz, the game area changes. 
+The quote, alternatives and the current quiz number are no longer displayed. Instead, the Game Area only shows the score and a goodbye message. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+After 10 seconds, the Game Area returns to the original state, and the score resets. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Footer
+The minimalist footer contains only a globe icon linked to the author's website.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Future Features
+The site, at its current state, presents a fully working simple quiz game. 
+While working on this project, I got ideas for making it more interesting. However, these features would add more complexity to the code and take more time to complete. So I listed a few of those ideas as future features.
+### Improve feedback for correct and incorrect answers
+The only feedback the user receives indicating whether he answered correctly is the scorecard's points. That could be more elaborate to make the site more attractive. Some suggestions would be:
+* Play different sounds for a correct or incorrect answer. To stay on theme, it could be the sound of a typewriting bell for a correct answer and a kneading paper sound for the wrong one.
+* Play the audio or video clip with the original movie quote just after the user selects the solution.
+* When clicking or tapping the wrong alternative, instead of going straight to the next question, the site could highlight the correct one in one colour (green, for example), highlight the wrong selected option in another colour (red), and fade the colours of the other alternatives. 
+### Improve the design 
+Although I appreciate a simple design, this one could use more graphs. Perhaps a photograph of a typewriting machine with the central section of the site as a sheet of paper. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Player name and sharing score
+A feature to help promote the site would be allowing the user to share his score and invite friends to play.
+Before starting the quiz, the user would input his name. After playing, the site would generate a personalised message, showing the user's name and score, with buttons to share the quiz result on social media channels, Whats App and email.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+I have manually tested the site on Chrome and Firefox on desktop computers with different screen sizes ( 27" and 13") on Chrome and Firefox on Android phones and tablet, and also using google dev tools.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### HTML Validator
+No errors were returned when passing through the [W3C Validator](https://validator.w3.org/).
+There was only a warning regarding an empty h2 heading, in which the JavaScript code would add the content.
+<br>
+![](/assets/readme/html_validator.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### CSS Validator
+No errors were returned when passing through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+<br>
+![](/assets/readme/css_validator.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Lighthouse Testing
+Lighthouse gave a performance score inferior to 89 points. However, in all other criteria, the score was about 90.
+<br> 
+![](/assets/readme/lightouse.png)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Main Languages and Applications Used
+* HTML5
+* CSS3
+* JavaScript
+* Google Fonts (https://fonts.google.com/)
+* Font Awesome
+* GitPod
+* GitHub
+* VS Studio Code
+* [Favicon](https://favicon.io/)
+* [Font Awesome] (https://fontawesome.com/)
 
-## FAQ about the uptime script
+## Deployment
+The site was deployed to GitHub pages.
+In the GitHub repository, go to Settings.
+Of the drop-down menu, select the Master Branch
+Click" Save"
+The page reloads with the link to the project: https://zemaciel.github.io/project-02/
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Credits
+As this is the first time I am learning Javascript, I sought other learning resources to complement my studies. Colt Steele and Stephen Grider's courses on Udemy and CoderLipi classes on YouTube were particularly helpful.
+<br>
+I have researched several online quizzes developed in JavaScript and quiz tutorials on building this project, including projects of other Code Institute students. Among all the sources I came across, a video class by Professor Edson Braga was one that I followed to structure the JavaScrip code for this quiz.
 
-**How will this affect me?**
+### Quiz Tutorials and Codes
+* [Edson Braga, Application in Java Script, Quiz (Portuguese)](https://youtu.be/Ph_1k5d1y_s) 
+* [GameDev Academy, Create a Basic Quiz using JavaScript](https://gamedevacademy.org/javascript-quiz-tutorial/)
+* [Coding With Nick: Quiz Web App using JavaScript](https://youtu.be/CqddbIrEM5I) 
+* [SitePoint, How to Make a Simple JavaScript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
+* [Kevin John Kiely, Quick Quiz – Project 2](https://github.com/kevinjohnkiely/quick-quiz-project-2)
+* [Aleksander Kisielewicz, 007 Quiz Game  – Project 2](https://github.com/alexkisielewicz/quiz-game)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Javascript Learning Resources
+* [Colt Steele and Stephen Grider: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/)
+* [CoderLipi, JavaScript Tutorial For Beginners To Experts | Full Course 2020](https://youtube.com/playlist?list=PLqkLaKB2GJhWXV9rcarwvn06ISlL_9mPQ)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
+### Other learning resources:
+* [Kevin Powel, Dealing with hover on mobile](https://www.youtube.com/watch?v=uuluAyw9AI0)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* [MDM](https://developer.mozilla.org/en-US/)
+* [W3 Schools](https://www.w3schools.com/)
+* [Stack Overflow](https://stackoverflow.com/)
 
-**Can I opt out?**
+### Movie Quotes
+* [Ameican Film Institute](https://www.afi.com/afis-100-years-100-movie-quotes/)
+* [The Top 50 Famous Movie Quotes](https://blog.hubspot.com/sales/famous-movie-quotes)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Acknowledgements 
+* Martina Terlevic, my mentor for the guidance. 
+* Special thanks to my colleagues on Slack for sharing valuable learning sources and their struggles during this course phase.  

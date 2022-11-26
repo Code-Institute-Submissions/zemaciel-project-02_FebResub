@@ -131,7 +131,7 @@ let q10 = {
 
 let q11 = {
     numQuiz: 10,
-    quote: "Rosebud",
+    quote: "Rosebud.",
     filmA: "The Constant Gardener",
     filmB: "The Secret Garden",
     filmC: "Citizen Kane",
@@ -257,5 +257,5 @@ function gameOver() {
     setTimeout(function () {
         points = 0 // reset score
         location.reload();
-    }, 7000)
+    }, 10000)
 }
