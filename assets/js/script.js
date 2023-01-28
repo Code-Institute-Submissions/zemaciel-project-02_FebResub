@@ -19,7 +19,7 @@ let articleQuestoes = document.querySelector('.movieQuotes')
 let filmList = document.querySelector('#filmList')
 let introDescription = document.querySelector("#introDescription")
 
-let q0 = {
+const q0 = {
     numQuiz: 0,
     quote: "Movie",
     filmA: "Film A",
@@ -29,7 +29,7 @@ let q0 = {
     correct: "0",
 }
 
-let q1 = {
+const q1 = {
     numQuiz: 1,
     quote: "I'm going to make him an offer he can't refuse.",
     filmA: "The Negotiator",
@@ -39,7 +39,7 @@ let q1 = {
     correct: "The Godfather",
 }
 
-let q2 = {
+const q2 = {
     numQuiz: 2,
     quote: "You're gonna need a bigger boat.",
     filmA: "Titanic",
@@ -49,7 +49,7 @@ let q2 = {
     correct: "Jaws",
 }
 
-let q3 = {
+const q3 = {
     numQuiz: 3,
     quote: "Go ahead, make my day.",
     filmA: "Sudden Impact",
@@ -59,7 +59,7 @@ let q3 = {
     correct: "Sudden Impact",
 }
 
-let q4 = {
+const q4 = {
     numQuiz: 4,
     quote: "Show me the money!",
     filmA: "Wall Street",
@@ -69,7 +69,7 @@ let q4 = {
     correct: "Jerry Maguire",
 }
 
-let q5 = {
+const q5 = {
     numQuiz: 5,
     quote: "Get busy living or get busy dying.",
     filmA: "Working Girl",
@@ -79,7 +79,7 @@ let q5 = {
     correct: "The Shawshank Redemption",
 }
 
-let q6 = {
+const q6 = {
     numQuiz: 6,
     quote: "Here's looking at you, kid.",
     filmA: "Rear Window",
@@ -89,7 +89,7 @@ let q6 = {
     correct: "Casablanca",
 }
 
-let q7 = {
+const q7 = {
     numQuiz: 7,
     quote: "I feel the need — the need for speed!",
     filmA: "Fast & Furious",
@@ -99,7 +99,7 @@ let q7 = {
     correct: "Top Gun",
 }
 
-let q8 = {
+const q8 = {
     numQuiz: 8,
     quote: "May the Force be with you.",
     filmA: "Star Trek Into Darkness",
@@ -109,7 +109,7 @@ let q8 = {
     correct: "Star Wars",
 }
 
-let q9 = {
+const q9 = {
     numQuiz: 9,
     quote: "Yo, Adrian!",
     filmA: "The Blues Brothers",
@@ -119,7 +119,7 @@ let q9 = {
     correct: "Rocky",
 }
 
-let q10 = {
+const q10 = {
     numQuiz: 10,
     quote: "Houston, we have a problem.",
     filmA: "Apollo 13",
@@ -129,7 +129,7 @@ let q10 = {
     correct: "Apollo 13",
 }
 
-let q11 = {
+const q11 = {
     numQuiz: 10,
     quote: "Rosebud.",
     filmA: "The Constant Gardener",
@@ -140,7 +140,7 @@ let q11 = {
 }
 
 
-let movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11] 
+const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11] 
 
 let counting = document.querySelector('#counting') 
 let total = document.querySelector('#total')
@@ -207,15 +207,13 @@ function checkResult(nQuiz, filmAnswer) {
     let rightFilm = movieQuotes[numberOfQuiz].correct 
 
     if (usersAwnser == rightFilm) {
-        // console.log("Right on!")
         points += 10 
     } else {
-        // console.log("Wrong, Dude!")
     }
 
     // Score
     score = points
-    scoreCard.textContent = "Points " + score //instrucoes
+    scoreCard.textContent = "Points " + score 
 
     // Block options
     blockChoices()
@@ -255,7 +253,7 @@ function gameOver() {
     introDescription.style.display = 'none'
 
     setTimeout(function () {
-        points = 0 // reset score
+        points = 0
         location.reload();
     }, 10000)
 }
