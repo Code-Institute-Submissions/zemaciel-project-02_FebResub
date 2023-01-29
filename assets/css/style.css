@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: absolute;
 }
 
 
@@ -140,9 +141,8 @@ ul li {
   display: none;
 }
 
-
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -159,26 +159,12 @@ footer {
   margin-bottom: 10px;
 }
 
-.version {
-  color: #FFF;
-  font-size: xx-small;
-  position: fixed;
-  bottom: 55px;
-  width: 100%;
-  text-align: center;
-  color: #FFF;
-}
-
-
 @media (hover: hover) {
   ul li:hover {
     border: 1px solid #A20C0C;
     cursor: pointer;
   }
 }
-
-
-
 
 /* // Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 320px) {
