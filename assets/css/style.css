@@ -1,28 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700&family=Special+Elite&display=swap');
 
-/* body {
+
+body {
   background-image: url(../images/paper.webp);
   background-repeat: repeat;
   background-color: #F4F4F4;
   display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  height: 100vh;
   margin: 0;
-} */
-
-body {
-	background-image: url(../images/paper.webp);
-  background-repeat: repeat;
-  background-color: #F4F4F4;
-  display: flex;
-	margin: 0;
-	width: 100vw;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 
@@ -98,6 +87,21 @@ h2 {
   text-align: center;
 }
 
+#progressBar {
+  width: 380px;
+  height: 15px;
+  border: 3px solid #A20C0C;
+  border-radius: 10px;
+  align-items: center;
+  margin: auto;
+}
+
+#progressBarFull {
+  height: 15px;
+  background-color: #A20C0C;
+  width: 0%;
+}
+
 #score_card {
   font-family: 'Special Elite', serif;
   font-weight: 400;
@@ -108,7 +112,6 @@ h2 {
 .center {
   align-items: center;
   text-align: center;
-
 }
 
 ul {
@@ -137,39 +140,33 @@ ul li {
   display: none;
 }
 
-/* .fa-linkedin,
-.fa-globe {
-  color: #222222;
-} */
-
 
 footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	text-align: center;
-	background-color: rgb(0, 0, 0);
-	height: 50px;
-	color: #FFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  height: 50px;
+  color: #FFF;
   padding: 5px, auto, 10px, auto;
 }
 
 .footer-icons {
-	color: #FFF;
-	font-size: 1.5rem;
-	padding: 10px;
-	margin-bottom: 10px;
+  color: #FFF;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.credit {
-  color:#FFF
+.version {
+  color: #FFF;
   font-size: xx-small;
   position: fixed;
-	bottom: 55px;
-	width: 100%;
-	text-align: center;
-	color: #FFF;
-  /* height: 70px; */
+  bottom: 55px;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
 }
 
 
@@ -193,8 +190,6 @@ footer {
     display: none;
   }
 
-  #quote {}
-
   h2 {
     font-size: 1.3rem;
     text-align: center;
@@ -215,13 +210,10 @@ footer {
     padding: 0.2rem;
     margin: 0.2rem;
     border-radius: 0.2rem;
-
   }
 
   .message {
     margin: 10px;
     padding-top: 10px;
-
-  }
-
+  };
 }

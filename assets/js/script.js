@@ -1,12 +1,11 @@
-
-let message = document.querySelector('.message')
-let scoreCard = document.querySelector('#score_card')
-let points = 0
-let score = 0
+let message = document.querySelector('.message');
+let scoreCard = document.querySelector('#score_card');
+let points = 0;
+let score = 0;
 
 // MOVIE QUOTE AND NUMBER 
-let numQuiz = document.querySelector('#numQuiz') 
-let quote = document.querySelector('#quote')
+let numQuiz = document.querySelector('#numQuiz');
+let quote = document.querySelector('#quote');
 
 // FILM TITLES
 let a = document.querySelector('#a')
@@ -15,7 +14,7 @@ let c = document.querySelector('#c')
 let d = document.querySelector('#d')
 
 // LIST WITH FILM TITLES
-let articleQuestoes = document.querySelector('.movieQuotes') 
+let articleQuestoes = document.querySelector('.movieArea')
 let filmList = document.querySelector('#filmList')
 let introDescription = document.querySelector("#introDescription")
 
@@ -140,16 +139,24 @@ const q11 = {
 }
 
 
-const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11] 
+const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11]
 
-let counting = document.querySelector('#counting') 
-let total = document.querySelector('#total')
+let currentQuestionNumb = document.querySelector('#numbCurrentQuestion')
+let availableQuestions = document.querySelector('#maxQuestions')
 
-counting.textContent = q1.numQuiz
+currentQuestionNumb.textContent = q1.numQuiz
 
-let totalMovieQuotes = (movieQuotes.length) - 1 
-console.log("Number of Questions " + totalMovieQuotes)
-total.textContent = totalMovieQuotes
+let totalMovieQuotes = (movieQuotes.length) - 1
+// console.log("Number of Questions " + totalMovieQuotes)
+availableQuestions.textContent = totalMovieQuotes
+
+
+// progressText.innerText = `Question ${currentQuestionNumb} of ${availableQuestions}`; Do I Need This?
+
+//Updated progress bar
+progressBarFull.style.width;
+
+// HEHERE HERE HERE
 
 // Setting up the first question
 numQuiz.textContent = q1.numQuiz
@@ -168,8 +175,8 @@ d.setAttribute('value', '1D')
 
 
 // // Next Questions
-function nextOuote(nQuiz) { 
-    counting.textContent = nQuiz
+function nextOuote(nQuiz) {
+    currentQuestionNumb.textContent = nQuiz
     numQuiz.textContent = movieQuotes[nQuiz].numQuiz
     quote.textContent = movieQuotes[nQuiz].quote
     a.textContent = movieQuotes[nQuiz].filmA
@@ -180,43 +187,45 @@ function nextOuote(nQuiz) {
     b.setAttribute('value', nQuiz + 'B')
     c.setAttribute('value', nQuiz + 'C')
     d.setAttribute('value', nQuiz + 'D')
-
-}
+};
 
 function blockChoices() {
     a.classList.add('blocked')
     b.classList.add('blocked')
     c.classList.add('blocked')
     d.classList.add('blocked')
-}
+};
 
 function unblockChoices() {
     a.classList.remove('blocked')
     b.classList.remove('blocked')
     c.classList.remove('blocked')
     d.classList.remove('blocked')
-}
+};
 
 
 function checkResult(nQuiz, filmAnswer) {
 
-    let numberOfQuiz = nQuiz.value  
+    let numberOfQuiz = nQuiz.value
 
-    let usersAwnser = filmAnswer.textContent 
+    let usersAwnser = filmAnswer.textContent
 
-    let rightFilm = movieQuotes[numberOfQuiz].correct 
+    let rightFilm = movieQuotes[numberOfQuiz].correct
 
     if (usersAwnser == rightFilm) {
-        points += 10 
-    } else {
+        points += 10
     }
+    // else {
+    // }
 
     // Score
-    score = points
-    scoreCard.textContent = "Points " + score 
+    score = points;
+    scoreCard.textContent = "Points " + score;
 
     // Block options
-    blockChoices()
+    blockChoices();
+
+
 
     setTimeout(function () {
         proxima = numberOfQuiz + 1
