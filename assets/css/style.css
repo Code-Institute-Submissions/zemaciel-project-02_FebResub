@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700&family=Special+Elite&display=swap');
 
-
 body {
   background-image: url(../images/paper.webp);
   background-repeat: repeat;
@@ -15,7 +14,6 @@ body {
   position: absolute;
 }
 
-
 p {
   font-family: Lato, sans-serif;
   font-weight: 700;
@@ -29,7 +27,6 @@ p {
 #introDescription {
   padding: 0 20px;
   margin-bottom: 15px;
-
 }
 
 .introText {
@@ -88,7 +85,7 @@ h2 {
   text-align: center;
 }
 
-#progressBar {
+/* #progressBar {
   width: 380px;
   height: 15px;
   border: 3px solid #A20C0C;
@@ -101,7 +98,7 @@ h2 {
   height: 15px;
   background-color: #A20C0C;
   width: 0%;
-}
+} */
 
 #score_card {
   font-family: 'Special Elite', serif;
@@ -120,7 +117,7 @@ ul {
   padding: 0;
 }
 
-ul li {
+.film {
   font-size: 1.2rem;
   font-family: Lato, sans-serif;
   font-weight: 300;
@@ -149,7 +146,7 @@ footer {
   background-color: rgb(0, 0, 0);
   height: 50px;
   color: #FFF;
-  padding: 5px, auto, 10px, auto;
+  padding: 5px auto 10px auto;
 }
 
 .footer-icons {
@@ -164,6 +161,57 @@ footer {
     border: 1px solid #A20C0C;
     cursor: pointer;
   }
+}
+
+/* end_game */
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+  width: 10rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: #A20C0C, 1px;
+}
+
+input::placeholder {
+  color: #aaaaaa;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  background-color: white;
+  border: 1px solid #222222;
+  color: #222222;
+  padding: 0.7rem;
+  margin: 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -186,7 +234,7 @@ footer {
     border: #222222 0.5px solid;
   }
 
-  ul li {
+  .films {
     font-size: 1rem;
     font-family: Lato, sans-serif;
     font-weight: 300;
@@ -201,5 +249,5 @@ footer {
   .message {
     margin: 10px;
     padding-top: 10px;
-  };
+  }
 }

@@ -5,7 +5,7 @@ let points = 0
 let score = 0
 
 // MOVIE QUOTE AND NUMBER 
-let numQuiz = document.querySelector('#numQuiz') 
+let numQuiz = document.querySelector('#numQuiz')
 let quote = document.querySelector('#quote')
 
 // FILM TITLES
@@ -15,7 +15,7 @@ let c = document.querySelector('#c')
 let d = document.querySelector('#d')
 
 // LIST WITH FILM TITLES
-let articleQuestoes = document.querySelector('.movieQuotes') 
+let articleQuestoes = document.querySelector('.movieQuotes')
 let filmList = document.querySelector('#filmList')
 let introDescription = document.querySelector("#introDescription")
 
@@ -140,14 +140,14 @@ const q11 = {
 }
 
 
-const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11] 
+const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11]
 
-let counting = document.querySelector('#counting') 
+let counting = document.querySelector('#counting')
 let total = document.querySelector('#total')
 
 counting.textContent = q1.numQuiz
 
-let totalMovieQuotes = (movieQuotes.length) - 1 
+let totalMovieQuotes = (movieQuotes.length) - 1
 console.log("Number of Questions " + totalMovieQuotes)
 total.textContent = totalMovieQuotes
 
@@ -168,7 +168,7 @@ d.setAttribute('value', '1D')
 
 
 // // Next Questions
-function nextOuote(nQuiz) { 
+function nextOuote(nQuiz) {
     counting.textContent = nQuiz
     numQuiz.textContent = movieQuotes[nQuiz].numQuiz
     quote.textContent = movieQuotes[nQuiz].quote
@@ -200,20 +200,20 @@ function unblockChoices() {
 
 function checkResult(nQuiz, filmAnswer) {
 
-    let numberOfQuiz = nQuiz.value  
+    let numberOfQuiz = nQuiz.value
 
-    let usersAwnser = filmAnswer.textContent 
+    let usersAwnser = filmAnswer.textContent
 
-    let rightFilm = movieQuotes[numberOfQuiz].correct 
+    let rightFilm = movieQuotes[numberOfQuiz].correct
 
     if (usersAwnser == rightFilm) {
-        points += 10 
+        points += 10
     } else {
     }
 
     // Score
     score = points
-    scoreCard.textContent = "Points " + score 
+    scoreCard.textContent = "Points " + score
 
     // Block options
     blockChoices()
@@ -232,9 +232,11 @@ function checkResult(nQuiz, filmAnswer) {
 }
 
 function gameOver() {
-    scoreCard.textContent = "Hasta la vista, baby"
+    // scoreCard.textContent = "Hasta la vista, baby"
     numQuiz.textContent = ""
-
+    localStorage.setItem("mostRecentScore", score);
+    //go to the end page
+    return window.location.assign("end_game.html");
 
     message.textContent = "Your score is " + points
 

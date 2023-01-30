@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8c53bc7b65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Movie Quotes Quiz</title>
+    <!-- links to favicon generated on favicon.io START -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <!-- links to favicon generated on favicon.io END -->
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div id="game-title">
+            <h1 class="heading">
+                <i id="logo" class="fa-solid fa-film"></i> Movie Quotes
+                <span id="red">Quiz</span>
+            </h1>
+        </div>
+
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form class="end-form-container">
+                <h2>Enter your name below to save your score!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled><i
+                        class="fa-regular fa-floppy-disk"></i> Save</button>
+            </form>
+            <a href="index.html" class="btn"><i class="fa-solid fa-play"></i> Play again</a>
+        </div>
+        </div>
+
+
+        <div class="center">
+            <p id="score_card"></p>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+
+        <a href="https://www.josemaciel.com/" target="_blank" rel="noopener" aria-label="Site (opens in a new tab)"><i
+                class="fa-solid fa-globe footer-icons"></i></a>
+        <a href="https://github.com/zemaciel/" target="_blank" rel="noopener"
+            aria-label="GitHub (opens in a new tab)"><i class="fa-brands fa-square-github footer-icons"></i></a>
+        <a href="https://www.linkedin.com/in/josemaciel/" target="_blank" rel="noopener"
+            aria-label="Linkedin (opens in a new tab)"><i class="fa-brands fa-linkedin footer-icons"></i></a>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/end.js"></script>
+
+</body>
+
+</html>
