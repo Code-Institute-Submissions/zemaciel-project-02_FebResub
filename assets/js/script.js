@@ -1,23 +1,20 @@
+let scoreCard = document.querySelector('#score_card');
+let points = 0;
+let score = 0;
 
-let message = document.querySelector('.message')
-let scoreCard = document.querySelector('#score_card')
-let points = 0
-let score = 0
+//Movie quotes and Quiz Number
+let numQuiz = document.querySelector('#numQuiz');
+let quote = document.querySelector('#quote');
 
-// MOVIE QUOTE AND NUMBER 
-let numQuiz = document.querySelector('#numQuiz')
-let quote = document.querySelector('#quote')
+// Films titles as alternatives
+let a = document.querySelector('#a');
+let b = document.querySelector('#b');
+let c = document.querySelector('#c');
+let d = document.querySelector('#d');
 
-// FILM TITLES
-let a = document.querySelector('#a')
-let b = document.querySelector('#b')
-let c = document.querySelector('#c')
-let d = document.querySelector('#d')
-
-// LIST WITH FILM TITLES
-let articleQuestoes = document.querySelector('.movieQuotes')
-let filmList = document.querySelector('#filmList')
-let introDescription = document.querySelector("#introDescription")
+let articleQuestoes = document.querySelector('.movieQuotes');
+let filmList = document.querySelector('#filmList');
+let introDescription = document.querySelector("#introDescription");
 
 const q0 = {
     numQuiz: 0,
@@ -27,7 +24,7 @@ const q0 = {
     filmC: "Film C",
     filmD: "Film D",
     correct: "0",
-}
+};
 
 const q1 = {
     numQuiz: 1,
@@ -37,7 +34,7 @@ const q1 = {
     filmC: "The Godfather",
     filmD: "The Departed",
     correct: "The Godfather",
-}
+};
 
 const q2 = {
     numQuiz: 2,
@@ -47,7 +44,7 @@ const q2 = {
     filmC: "The Life Aquatic with Steve Zissou",
     filmD: "All is Lost",
     correct: "Jaws",
-}
+};
 
 const q3 = {
     numQuiz: 3,
@@ -57,7 +54,7 @@ const q3 = {
     filmC: "Lethal Weapon",
     filmD: "Groundhog day",
     correct: "Sudden Impact",
-}
+};
 
 const q4 = {
     numQuiz: 4,
@@ -67,7 +64,7 @@ const q4 = {
     filmC: "Jerry Maguire",
     filmD: "The Big Short",
     correct: "Jerry Maguire",
-}
+};
 
 const q5 = {
     numQuiz: 5,
@@ -77,7 +74,7 @@ const q5 = {
     filmC: "The Rock",
     filmD: "The Shawshank Redemption",
     correct: "The Shawshank Redemption",
-}
+};
 
 const q6 = {
     numQuiz: 6,
@@ -87,7 +84,7 @@ const q6 = {
     filmC: "Scent of a Woman",
     filmD: "Home Alone",
     correct: "Casablanca",
-}
+};
 
 const q7 = {
     numQuiz: 7,
@@ -97,7 +94,7 @@ const q7 = {
     filmC: "Gone in 60 Seconds",
     filmD: "Top Gun",
     correct: "Top Gun",
-}
+};
 
 const q8 = {
     numQuiz: 8,
@@ -107,7 +104,7 @@ const q8 = {
     filmC: "Interstellar",
     filmD: "The Dark Knight Rises",
     correct: "Star Wars",
-}
+};
 
 const q9 = {
     numQuiz: 9,
@@ -117,7 +114,7 @@ const q9 = {
     filmC: "Knives Out",
     filmD: "Rocketman",
     correct: "Rocky",
-}
+};
 
 const q10 = {
     numQuiz: 10,
@@ -127,7 +124,7 @@ const q10 = {
     filmC: "JFK",
     filmD: "The Alamo",
     correct: "Apollo 13",
-}
+};
 
 const q11 = {
     numQuiz: 10,
@@ -137,125 +134,95 @@ const q11 = {
     filmC: "Citizen Kane",
     filmD: "Gone with the Wind",
     correct: "Citizen Kane",
-}
+};
 
+const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11];
 
-const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11]
+let counting = document.querySelector('#counting');
+let total = document.querySelector('#total');
 
-let counting = document.querySelector('#counting')
-let total = document.querySelector('#total')
+counting.textContent = q1.numQuiz;
 
-counting.textContent = q1.numQuiz
-
-let totalMovieQuotes = (movieQuotes.length) - 1
-console.log("Number of Questions " + totalMovieQuotes)
-total.textContent = totalMovieQuotes
+let totalMovieQuotes = (movieQuotes.length) - 1;
+console.log("Number of Questions " + totalMovieQuotes);
+total.textContent = totalMovieQuotes;
 
 // Setting up the first question
-numQuiz.textContent = q1.numQuiz
-quote.textContent = q1.quote
-a.textContent = q1.filmA
-b.textContent = q1.filmB
-c.textContent = q1.filmC
-d.textContent = q1.filmD
+numQuiz.textContent = q1.numQuiz;
+quote.textContent = q1.quote;
+a.textContent = q1.filmA;
+b.textContent = q1.filmB;
+c.textContent = q1.filmC;
+d.textContent = q1.filmD;
 
 // Setting values for questions
-a.setAttribute('value', '1A')
-b.setAttribute('value', '1B')
-c.setAttribute('value', '1C')
-c.setAttribute('value', '1C')
-d.setAttribute('value', '1D')
+a.setAttribute('value', '1A');
+b.setAttribute('value', '1B');
+c.setAttribute('value', '1C');
+c.setAttribute('value', '1C');
+d.setAttribute('value', '1D');
 
-
-// // Next Questions
+//Next Questions
 function nextOuote(nQuiz) {
     counting.textContent = nQuiz
-    numQuiz.textContent = movieQuotes[nQuiz].numQuiz
-    quote.textContent = movieQuotes[nQuiz].quote
-    a.textContent = movieQuotes[nQuiz].filmA
-    b.textContent = movieQuotes[nQuiz].filmB
-    c.textContent = movieQuotes[nQuiz].filmC
-    d.textContent = movieQuotes[nQuiz].filmD
-    a.setAttribute('value', nQuiz + 'A')
-    b.setAttribute('value', nQuiz + 'B')
-    c.setAttribute('value', nQuiz + 'C')
-    d.setAttribute('value', nQuiz + 'D')
-
+    numQuiz.textContent = movieQuotes[nQuiz].numQuiz;
+    quote.textContent = movieQuotes[nQuiz].quote;
+    a.textContent = movieQuotes[nQuiz].filmA;
+    b.textContent = movieQuotes[nQuiz].filmB;
+    c.textContent = movieQuotes[nQuiz].filmC;
+    d.textContent = movieQuotes[nQuiz].filmD;
+    a.setAttribute('value', nQuiz + 'A');
+    b.setAttribute('value', nQuiz + 'B');
+    c.setAttribute('value', nQuiz + 'C');
+    d.setAttribute('value', nQuiz + 'D');
 }
 
 function blockChoices() {
-    a.classList.add('blocked')
-    b.classList.add('blocked')
-    c.classList.add('blocked')
-    d.classList.add('blocked')
+    a.classList.add("blocked");
+    b.classList.add("blocked");
+    c.classList.add("blocked");
+    d.classList.add("blocked");
 }
 
 function unblockChoices() {
-    a.classList.remove('blocked')
-    b.classList.remove('blocked')
-    c.classList.remove('blocked')
-    d.classList.remove('blocked')
+    a.classList.remove("blocked");
+    b.classList.remove("blocked");
+    c.classList.remove("blocked");
+    d.classList.remove("blocked");
 }
 
-
 function checkResult(nQuiz, filmAnswer) {
-
-    let numberOfQuiz = nQuiz.value
-
-    let usersAwnser = filmAnswer.textContent
-
-    let rightFilm = movieQuotes[numberOfQuiz].correct
+    let numberOfQuiz = nQuiz.value;
+    let usersAwnser = filmAnswer.textContent;
+    let rightFilm = movieQuotes[numberOfQuiz].correct;
 
     if (usersAwnser == rightFilm) {
         points += 10
-    } else {
     }
 
     // Score
-    score = points
-    scoreCard.textContent = "Points " + score
+    score = points;
+    scoreCard.textContent = "Points " + score;
 
     // Block options
-    blockChoices()
+    blockChoices();
 
     setTimeout(function () {
-        proxima = numberOfQuiz + 1
-        if (proxima > totalMovieQuotes) {
-            console.log('Game Over')
-            gameOver()
-        } else {
-            nextOuote(proxima)
+        nextQuiz = numberOfQuiz + 1
+        if (nextQuiz > totalMovieQuotes) {
+            gameOver();
         }
-    }, 250)
+        else {
+            nextOuote(nextQuiz);
+        }
+    }, 250);
 
-    unblockChoices()
+    unblockChoices();
 }
 
 function gameOver() {
-    // scoreCard.textContent = "Hasta la vista, baby"
     numQuiz.textContent = ""
     localStorage.setItem("mostRecentScore", score);
-    //go to the end page
+    //Go to the end page
     return window.location.assign("end_game.html");
-
-    message.textContent = "Your score is " + points
-
-    a.textContent = ""
-    b.textContent = ""
-    c.textContent = ""
-    d.textContent = ""
-
-    a.setAttribute('value', '0')
-    b.setAttribute('value', '0')
-    c.setAttribute('value', '0')
-    d.setAttribute('value', '0')
-
-    // Hide Question
-    articleQuestoes.style.display = 'none'
-    introDescription.style.display = 'none'
-
-    setTimeout(function () {
-        points = 0
-        location.reload();
-    }, 10000)
 }

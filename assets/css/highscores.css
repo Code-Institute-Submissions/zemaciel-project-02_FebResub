@@ -36,20 +36,20 @@ h2 {
 
 ul {
   list-style-type: none;
-  padding: 2;
+  padding: 2px;
 }
 
 .btn {
   font-size: 1.2rem;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
+  font-family: 'Special Elite', serif;
   background-color: white;
-  border: 1px solid #222222;
+  border: 1px solid #A20C0C;
   color: #222222;
   padding: 0.7rem;
   margin: 0.7rem;
   border-radius: 0.3rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* High Scores */

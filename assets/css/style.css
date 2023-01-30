@@ -203,15 +203,15 @@ input::placeholder {
 
 .btn {
   font-size: 1.2rem;
-  font-family: Lato, sans-serif;
-  font-weight: 300;
+  font-family: 'Special Elite', serif;
   background-color: white;
-  border: 1px solid #222222;
+  border: 1px solid #A20C0C;
   color: #222222;
   padding: 0.7rem;
   margin: 0.7rem;
   border-radius: 0.3rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -236,7 +236,7 @@ input::placeholder {
 
   .films {
     font-size: 1rem;
-    font-family: Lato, sans-serif;
+    font-family: spe, sans-serif;
     font-weight: 300;
     background-color: white;
     border: 1px solid #222222;
