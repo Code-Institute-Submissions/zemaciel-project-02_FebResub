@@ -16,7 +16,8 @@ let b = document.querySelector('#b');
 let c = document.querySelector('#c');
 let d = document.querySelector('#d');
 
-let articleQuestoes = document.querySelector('.movieQuotes');
+let articleMovieQuotes = document.querySelector(".movieQuotes");
+let  scoreColorBg = document.querySelector(".applyColor");
 let filmList = document.querySelector('#filmList');
 let introDescription = document.querySelector("#introDescription");
 
@@ -145,7 +146,7 @@ let introDescription = document.querySelector("#introDescription");
 let counting = document.querySelector('#counting');
 let total = document.querySelector('#total');
 
-counting.textContent = q1.numQuiz;
+// counting.textContent = q1.numQuiz;
 
 let totalMovieQuotes = (movieQuotes.length) - 1;
 total.textContent = totalMovieQuotes;
@@ -194,18 +195,46 @@ function unblockChoices() {
     d.classList.remove("blocked");
 }
 
+// Show the user if his awnser was correct or incorrect
+function correctClass (){
+    scoreColorBg.classList.remove('incorrect');
+    scoreColorBg.classList.add('correct');
+};
+
+function incorrectClass (){
+    scoreColorBg.classList.remove('correct');
+    scoreColorBg.classList.add('incorrect');
+};
+
+function removeClass (){
+    scoreColorBg.classList.remove('correct');
+    scoreColorBg.classList.remove('incorrect');
+};
+
+// setAttribute('src','caminho-da-imagem')
+
 function checkResult(nQuiz, filmAnswer) {
     let numberOfQuiz = nQuiz.value;
     let usersAwnser = filmAnswer.textContent;
     let rightFilm = movieQuotes[numberOfQuiz].correct;
-    //here!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-    console.log(numberOfQuiz);
+
     //Update the progress bar
     progressBarFull.style.width = `${(numberOfQuiz / totalMovieQuotes) * 100}%`;
 
+
     if (usersAwnser == rightFilm) {
-        points += 10
+        points += 10;
+        correctClass();
     }
+    else {
+        incorrectClass();
+
+    };
+
+    setTimeout(() => {
+        removeClass();
+    }, 1000);
+
 
     // Score
     score = points;
@@ -222,7 +251,7 @@ function checkResult(nQuiz, filmAnswer) {
         else {
             nextOuote(nextQuiz);
         }
-    }, 250);
+    }, 1000);
 
     unblockChoices();
 }

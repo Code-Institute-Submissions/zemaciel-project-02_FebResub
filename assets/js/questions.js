@@ -10,7 +10,7 @@ const q0 = {
 
 const q1 = {
     numQuiz: 1,
-    quote: "I'm going to make him an offer he can't refuse.",
+    quote: "I'm going to make him an \n offer he can't refuse.",
     filmA: "The Negotiator",
     filmB: "The Firm",
     filmC: "The Godfather",

@@ -88,15 +88,15 @@ h2 {
 
 #progressBar {
   width: 380px;
-  height: 15px;
-  border: 3px solid #A20C0C;
+  height: 10px;
+  border: 2px solid #A20C0C;
   border-radius: 10px;
   align-items: center;
   margin: auto;
 }
 
 #progressBarFull {
-  height: 15px;
+  height: 10px;
   background-color: #A20C0C;
   width: 0%;
 }
@@ -104,7 +104,7 @@ h2 {
 #score_card {
   font-family: 'Special Elite', serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #A20C0C;
 }
 
@@ -126,17 +126,23 @@ ul {
   border: 1px solid #222222;
   color: #222222;
   padding: 0.7rem;
-  margin: 0.7rem;
+  margin: 0.5rem;
   border-radius: 0.3rem;
   cursor: pointer;
 }
 
+.applyColor {
+  line-height: 3rem;
+  border-radius: 50px;
+
+}
+
 .correct {
-  background-color: #28a745;
+  background-color: #77fb96;
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #a20c0c6f;
 }
 
 .blocked {
