@@ -10,11 +10,11 @@ const q0 = {
 
 const q1 = {
     numQuiz: 1,
-    quote: "I'm going to make him an \n offer he can't refuse.",
-    filmA: "The Negotiator",
-    filmB: "The Firm",
+    quote: "Leave the gun, take the cannoli.",
+    filmA: "Under the Tuscan Sun",
+    filmB: "Eat Pray Love",
     filmC: "The Godfather",
-    filmD: "The Departed",
+    filmD: "The Italian Job",
     correct: "The Godfather",
 };
 
