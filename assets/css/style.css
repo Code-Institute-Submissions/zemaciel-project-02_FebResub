@@ -71,6 +71,7 @@ h2 {
   align-items: center;
 }
 
+
 .quoteHeader h2 {
   padding: 10px;
   border-radius: 0.5px;
@@ -118,7 +119,7 @@ ul {
 }
 
 .film {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: Lato, sans-serif;
   font-weight: 300;
   background-color: white;
@@ -128,6 +129,14 @@ ul {
   margin: 0.7rem;
   border-radius: 0.3rem;
   cursor: pointer;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
 }
 
 .blocked {
