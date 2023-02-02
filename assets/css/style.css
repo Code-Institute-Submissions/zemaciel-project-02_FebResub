@@ -85,7 +85,7 @@ h2 {
   text-align: center;
 }
 
-/* #progressBar {
+#progressBar {
   width: 380px;
   height: 15px;
   border: 3px solid #A20C0C;
@@ -98,7 +98,7 @@ h2 {
   height: 15px;
   background-color: #A20C0C;
   width: 0%;
-} */
+}
 
 #score_card {
   font-family: 'Special Elite', serif;
