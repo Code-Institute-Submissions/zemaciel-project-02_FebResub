@@ -6,6 +6,7 @@
 [Live Site](https://zemaciel.github.io/project-02/)
 
 This website is a Quiz Game produced as the Second Portfolio Project (JavaScript Essentials) for the Diploma in Full Stack Software Development course at [Code Institute](https://codeinstitute.net/ie/).
+This is an updated version of the first submitted project.
 <br>
 <br>
 <br>
@@ -45,7 +46,8 @@ This website is a Quiz Game produced as the Second Portfolio Project (JavaScript
 
 ## Site Goals
 The main goal is to test the users' knowledge of famous movie quotes. Hence, the site displays a line with a movie quotation and four boxes underneath, each containing a movie title, where only one corresponds to the correct answer. The user is asked to match 10 quotes.
-<br>There are also two areas exhibiting information about the game. One is a counter, indicating the number of the current question and the number of total questions, and the other is a score showing how many points the user gets. The site gives 10 points for each correct answer.
+<br>Originally there were two areas exhibiting information about the game: a counter, indicating the number of the current question and the number of total questions, and the score card showing how many points the user gets. This updated version also displays a progress bar and an instant feedback to indicate if the user selection was correct or not: the background color of the score card changes to green or red.
+The site gives 10 points for each correct answer.
 
 
 ## Design
@@ -66,8 +68,11 @@ There are only two font families in use on this website. Special Elite, which re
 ![](/assets/readme/typography.png)
 
 ### Logo and Favicon
-* The element for the logo is just an icon from [Font Awesome](https://fontawesome.com/).
-* The favicon is the same icon inside a speech bubble I designed on Adobe Illustrator and exported as favicon using [favicon.io](https://favicon.io/)
+
+![logo](/assets/readme/logo_movie_quote.png)
+
+* I designed the logo and the favicon using Adobe Illustrator. The symbol a speech bubble with an icon from [Font Awesome](https://fontawesome.com/).
+* The favicon was exported as favicon using [favicon.io](https://favicon.io/)
 <br>![favicon](/assets/readme/icon.png)
 
 
@@ -75,7 +80,7 @@ There are only two font families in use on this website. Special Elite, which re
 
 ### Heading
 The heading contains the title of the page and an icon. This section is not modified during the game. 
-In small-screen devices, the icon is not displayed. 
+
 
 ### Game Area
 This section contains the quiz itself. It is constituted of the following:
@@ -97,12 +102,12 @@ The quote, alternatives and the current quiz number are no longer displayed. Ins
 After 10 seconds, the Game Area returns to the original state, and the score resets. 
 
 ### Footer
-The minimalist footer contains only a globe icon linked to the author's website.
-
+The minimalist footer contains only three icons for the author's website, LinkedIn and GitHub.
 
 ## Future Features
 The site, at its current state, presents a fully working simple quiz game. 
 While working on this project, I got ideas for making it more interesting. However, these features would add more complexity to the code and take more time to complete. So I listed a few of those ideas as future features.
+
 ### Improve feedback for correct and incorrect answers
 The only feedback the user receives indicating whether he answered correctly is the scorecard's points. That could be more elaborate to make the site more attractive. Some suggestions would be:
 * Play different sounds for a correct or incorrect answer. To stay on theme, it could be the sound of a typewriting bell for a correct answer and a kneading paper sound for the wrong one.
