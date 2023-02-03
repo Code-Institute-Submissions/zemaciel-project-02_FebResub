@@ -18,30 +18,36 @@
 
 <body>
     <main class="main-container">
-        <div id="game-title">
-            <h1 class="heading">
-                <i id="logo" class="fa-solid fa-film"></i> Movie Quotes
-                <span id="red">Quiz</span>
-            </h1>
+        <div id="gameTitle" class="center">
+            <img src="assets/images/quiz_logo.png">
         </div>
 
         <div id="feedbackImage">
         </div>
 
         <div id="end" class="flex-center flex-column">
-            <p id="end-game-score">Your score is: <span id="finalScore">0</span> points</p>
+            <p id="end-game-score">You scored <span id="finalScore">0</span> points</p>
             <p id="feedbackMessage"></p>
             <form class="end-form-container">
                 <h3>Enter your name below to save your score!</h3>
                 <input type="text" name="name" id="username" placeholder="Enter your name">
-                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>
-                    <i class="fa-solid fa-floppy-disk" id="red"></i> Save </button>
-            </form>
-            <a href="index.html" class="btn"><i class="fa-solid fa-rotate-right" id="red"></i> Play again</a>
+                <div class="btn-row">
+                    <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>
+                        <i class="fa-solid fa-floppy-disk" id="red"></i> Save
+                    </button>
+                    <button class="btn">
+                        <a href="index.html"><i class="fa-solid fa-rotate-right" id="red"></i> Play again</a>
+                    </button>
+                </div>
+        </form>
         </div>
 
         <div class="center">
             <p id="score_card"></p>
+        </div>
+        <div class="credit">
+            <p>Gif images from <a href="https://giphy.com/" target="_blank" rel="noopener"
+                aria-label="Giphy website (opens in a new tab)">> giphy.com</p>
         </div>
     </main>
 
