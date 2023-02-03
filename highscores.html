@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/8c53bc7b65.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="assets/css/highscores.css"/> -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
   <title>Movie Quotes Quiz</title>
   <!-- links to favicon generated on favicon.io START -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -18,31 +17,34 @@
 </head>
 
 <body>
-  <main class="main-container">
-    <div id="gameTitle" class="center">
-      <img src="assets/images/quiz_logo.png">
+  <main class="main-container flex-center flex-column">
+    <div>
+      <img id="gameTitle" src="assets/images/quiz_logo.png" alt="Movie Quotes Quiz logo">
     </div>
+    <div id="highScores" class="center">
+      <h2 id="finalScore">High Scores</h2>
+      <ol id="highScoresList"></ol>
+    </div>
+    <div class="extra-margin center">
+      <a href="index.html" class="btn"><i class="fa-solid fa-rotate-right red"></i> Play again</a>
+    </div>
+    <div id="feedbackImage" class="extra-margin"><img src="assets/images/hastalavista.gif" alt="Hasta la vista, baby.">
+    </div>
+    <div class="credit">
+      <p>Gif images from <a href="https://giphy.com/" target="_blank" rel="noopener"
+          aria-label="Giphy website (opens in a new tab)">giphy.com</a></p>
+    </div>
+  </main>
 
-    <div class="container" class="flex-center flex-column">
-      <div style="width:100%;height:0;padding-bottom:43%;position:relative;"><iframe src="https://giphy.com/embed/26BoCW1FA2980EaR2" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a class="credit" href="https://giphy.com/gifs/26BoCW1FA2980EaR2">via GIPHY</a></p>
-      <div id="highScores" class="flex-center flex-column">
-        <h1 id="finalScore">High Scores</h1>
-        <ul id="highScoresList"></ul>
-        <a href="index.html" class="btn"><i class="fa-solid fa-rotate-right" id="red"></i> Play again</a>
-      </div>
-    </div>
-     </main>
   <footer>
-
     <a href="https://www.josemaciel.com/" target="_blank" rel="noopener" aria-label="Site (opens in a new tab)"><i
-            class="fa-solid fa-globe footer-icons"></i></a>
-    <a href="https://github.com/zemaciel/" target="_blank" rel="noopener"
-        aria-label="GitHub (opens in a new tab)"><i class="fa-brands fa-square-github footer-icons"></i></a>
+        class="fa-solid fa-globe footer-icons"></i></a>
+    <a href="https://github.com/zemaciel/" target="_blank" rel="noopener" aria-label="GitHub (opens in a new tab)"><i
+        class="fa-brands fa-square-github footer-icons"></i></a>
     <a href="https://www.linkedin.com/in/josemaciel/" target="_blank" rel="noopener"
-        aria-label="Linkedin (opens in a new tab)"><i class="fa-brands fa-linkedin footer-icons"></i></a>
+      aria-label="Linkedin (opens in a new tab)"><i class="fa-brands fa-linkedin footer-icons"></i></a>
+  </footer>
 
-</footer>
- 
+  <script src="assets/js/highscores.js"></script>
 </body>
-<script src="assets/js/highscores.js"></script>
 </html>

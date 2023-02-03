@@ -9,15 +9,15 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
-  /* position: absolute; */
+  overflow: auto;
 }
 
-.main-container{
-  padding-top: 25px;
-  /* display: flex; */
+.main-container {
+  margin-top: 30px;
+  padding: 10px;
+  align-items: flex-start;
 }
 
 p {
@@ -31,9 +31,9 @@ p {
 }
 
 #gameTitle {
-  margin-top: 25px;
-  padding: 10px;
-  max-width: 300px;
+  margin: 25px auto;
+  max-width: 350px;
+  flex-shrink: 0;
 }
 
 #introDescription {
@@ -47,7 +47,7 @@ p {
   color: #626161;
 }
 
-#red {
+.red {
   color: #A20C0C
 }
 
@@ -74,6 +74,21 @@ h3 {
   color: #A20C0C;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
 #quote {
   text-align: center;
   padding: 0 20px;
@@ -90,9 +105,8 @@ h3 {
   align-items: center;
 }
 
-
 .quoteHeader h2 {
-  padding: 7px;
+  padding: 5px;
   border-radius: 0.5px;
   border: 1px solid #222222;
   text-align: center;
@@ -126,15 +140,6 @@ h3 {
   font-weight: 400;
   font-size: 1.2rem;
   color: #A20C0C;
-}
-
-.center {
-  /* align-items: center;
-  text-align: center; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
 }
 
 ul {
@@ -177,28 +182,28 @@ ul {
   display: none;
 }
 
-.credit{
+.credit {
   text-align: center;
   text-decoration: none;
   font-size: x-small;
 }
 
+.credit a {
+  text-decoration: none;
+}
+
 footer {
-  /* display: flex;
-  flex-direction: column; */
   align-items: center;
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
   text-align: center;
   background-color: #222222;
   height: 50px;
   color: #FFF;
-  padding: 5px auto 10px auto;
+  padding: 5px 0px 10px 0px;
 }
 
 .footer-icons {
-  /* display: flex; */
   flex-direction: row;
   justify-content: center;
   list-style: none;
@@ -216,16 +221,14 @@ footer {
 }
 
 /* end_game */
-
 #feedbackImage {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 500px;
-  /* ; */
 }
 
-#feedbackImage img{
+#feedbackImage img {
   border-radius: 20px;
   box-shadow: 5px 5px 10px #222222;
   max-width: 350px;
@@ -244,7 +247,8 @@ input {
   width: 350px;
   padding: 0.5rem;
   font-size: 1rem;
-  border: #A20C0C, 1px;
+  border: #A20C0C solid 1px;
+  border-radius: 10px;
 }
 
 input::placeholder {
@@ -253,19 +257,9 @@ input::placeholder {
 
 #username {
   margin-bottom: 3rem;
-  width: 80;
   outline: none;
 }
 
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
 
 .btn {
   font-size: 1.2rem;
@@ -284,33 +278,37 @@ input::placeholder {
   flex-direction: row;
   justify-content: center;
 }
+
 .btn a {
   text-decoration: none;
-  color: #222222
+}
+
+.extra-margin {
+  margin: 10px auto;
 }
 
 /* High Scores */
 
 #highScoresList {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: Lato, sans-serif;
   font-weight: 300;
-  background-color: white;
-  border: 2px solid #A20C0C;
   color: #222222;
-  padding: 0.7rem;
-  margin: 0.7rem;
-  border-radius: 0.3rem;
-
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border-radius: 15px;
+  background-color: white;
+  border: 1px solid #A20C0C;
+  width: 300px;
+  text-align: center;
 }
 
 .high-score {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin: 15px;
 }
 
-.final-image{
-  img{
+.final-image {
+  img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
     max-width: 350px;
@@ -323,11 +321,7 @@ input::placeholder {
     font-size: 1.8rem;
   }
 
-  #logo {
-    display: none;
-  }
-
-  h2 {
+  /* h2 {
     font-family: 'Special Elite', serif;
     font-size: 1.3rem;
     text-align: center;
@@ -336,7 +330,7 @@ input::placeholder {
     line-height: 1.4rem;
     background-color: rgba(255, 255, 255, 0.793);
     border: #222222 0.5px solid;
-  }
+  } */
 
   #end-game-score {
     font-family: Lato, sans-serif;
@@ -369,4 +363,11 @@ input::placeholder {
     margin: 10px;
     padding-top: 10px;
   }
+  #gameTitle {
+    margin: 15px auto;
+    max-width: 300px;
+  }
+
+
+
 }

@@ -17,15 +17,15 @@
 </head>
 
 <body>
-    <main class="main-container">
-        <div id="gameTitle" class="center">
-            <img src="assets/images/quiz_logo.png">
+    <main class="main-container flex-center flex-column">
+        <div>
+            <img id="gameTitle" src="assets/images/quiz_logo.png" alt="Movie Quotes Quiz logo">
         </div>
 
         <div id="feedbackImage">
         </div>
 
-        <div id="end" class="flex-center flex-column">
+        <div id="end" class="center">
             <p id="end-game-score">You scored <span id="finalScore">0</span> points</p>
             <p id="feedbackMessage"></p>
             <form class="end-form-container">
@@ -33,13 +33,13 @@
                 <input type="text" name="name" id="username" placeholder="Enter your name">
                 <div class="btn-row">
                     <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>
-                        <i class="fa-solid fa-floppy-disk" id="red"></i> Save
+                        <i class="fa-solid fa-floppy-disk red"></i> Save
                     </button>
-                    <button class="btn">
-                        <a href="index.html"><i class="fa-solid fa-rotate-right" id="red"></i> Play again</a>
-                    </button>
+
+
+                    <a href="index.html" class="btn"><i class="fa-solid fa-rotate-right red"></i> Play again</a>
                 </div>
-        </form>
+            </form>
         </div>
 
         <div class="center">
@@ -47,7 +47,7 @@
         </div>
         <div class="credit">
             <p>Gif images from <a href="https://giphy.com/" target="_blank" rel="noopener"
-                aria-label="Giphy website (opens in a new tab)">> giphy.com</p>
+                    aria-label="Giphy website (opens in a new tab)">giphy.com</a></p>
         </div>
     </main>
 
