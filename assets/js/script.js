@@ -16,10 +16,10 @@ let b = document.querySelector('#b');
 let c = document.querySelector('#c');
 let d = document.querySelector('#d');
 
-let articleMovieQuotes = document.querySelector(".movieQuotes");
+// let articleMovieQuotes = document.querySelector(".movieQuotes");
 let  scoreColorBg = document.querySelector(".applyColor");
-let filmList = document.querySelector('#filmList');
-let introDescription = document.querySelector("#introDescription");
+// let filmList = document.querySelector('#filmList');
+// let introDescription = document.querySelector("#introDescription");
 
 
 let counting = document.querySelector('#counting');
@@ -47,7 +47,7 @@ d.setAttribute('value', '1D');
 
 //Next Questions
 function nextOuote(nQuiz) {
-    counting.textContent = nQuiz
+    counting.textContent = nQuiz;
     numQuiz.textContent = movieQuotes[nQuiz].numQuiz;
     quote.textContent = movieQuotes[nQuiz].quote;
     a.textContent = movieQuotes[nQuiz].filmA;
@@ -78,17 +78,17 @@ function unblockChoices() {
 function correctClass (){
     scoreColorBg.classList.remove('incorrect');
     scoreColorBg.classList.add('correct');
-};
+}
 
 function incorrectClass (){
     scoreColorBg.classList.remove('correct');
     scoreColorBg.classList.add('incorrect');
-};
+}
 
 function removeClass (){
     scoreColorBg.classList.remove('correct');
     scoreColorBg.classList.remove('incorrect');
-};
+}
 
 // setAttribute('src','caminho-da-imagem')
 
@@ -107,8 +107,7 @@ function checkResult(nQuiz, filmAnswer) {
     }
     else {
         incorrectClass();
-
-    };
+    }
 
     setTimeout(() => {
         removeClass();

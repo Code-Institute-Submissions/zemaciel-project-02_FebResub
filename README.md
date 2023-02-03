@@ -96,7 +96,6 @@ The quote, alternatives and the current quiz number are no longer displayed. Ins
 
 After 10 seconds, the Game Area returns to the original state, and the score resets. 
 
-
 ### Footer
 The minimalist footer contains only a globe icon linked to the author's website.
 
@@ -144,13 +143,13 @@ Lighthouse gave a performance score inferior to 89 points. However, in all other
 * HTML5
 * CSS3
 * JavaScript
-* Google Fonts (https://fonts.google.com/)
+* [Google Fonts](https://fonts.google.com/)
 * Font Awesome
 * GitPod
 * GitHub
 * VS Studio Code
 * [Favicon](https://favicon.io/)
-* [Font Awesome] (https://fontawesome.com/)
+* [Font Awesome](https://fontawesome.com/)
 
 ## Deployment
 The site was deployed to GitHub pages.
@@ -166,30 +165,29 @@ As this is the first time I am learning Javascript, I sought other learning reso
 I have researched several online quizzes developed in JavaScript and quiz tutorials on building this project, including projects of other Code Institute students. Among all the sources I came across, a video class by Professor Edson Braga was one that I followed to structure the JavaScrip code for this quiz.
 
 ### Quiz Tutorials and Codes
-* [Edson Braga, Application in Java Script, Quiz (Portuguese)](https://youtu.be/Ph_1k5d1y_s) 
-* [GameDev Academy, Create a Basic Quiz using JavaScript](https://gamedevacademy.org/javascript-quiz-tutorial/)
-* [Coding With Nick: Quiz Web App using JavaScript](https://youtu.be/CqddbIrEM5I) 
-* [SitePoint, How to Make a Simple JavaScript Quiz](https://www.sitepoint.com/simple-javascript-quiz/)
-* [Kevin John Kiely, Quick Quiz – Project 2](https://github.com/kevinjohnkiely/quick-quiz-project-2)
-* [Aleksander Kisielewicz, 007 Quiz Game  – Project 2](https://github.com/alexkisielewicz/quiz-game)
-
-
-### Javascript Learning Resources
-* [Colt Steele and Stephen Grider: The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/)
-* [CoderLipi, JavaScript Tutorial For Beginners To Experts | Full Course 2020](https://youtube.com/playlist?list=PLqkLaKB2GJhWXV9rcarwvn06ISlL_9mPQ)
+* Edson Braga, Application in Java Script, Quiz (Portuguese) [Class 20](https://youtu.be/Ph_1k5d1y_s) 
+and [Class 21](https://www.youtube.com/watch?v=zQe2wXmO0p8&list=PLnex8IkmReXxZEXje06kW1uCwm5iC8M_Z&index=22).
+* James Q Quick, [Build a Quiz App with HTML, CSS, and JavaScript](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx). 
+* lizac9 [Black & White Horror Film Quiz](https://github.com/lizac9/project2-bn-horror-film)
+* Aleksander Kisielewicz, [007 Quiz Game  – Project 2](https://github.com/alexkisielewicz/quiz-game)
 
 
 ### Other learning resources:
-* [Kevin Powel, Dealing with hover on mobile](https://www.youtube.com/watch?v=uuluAyw9AI0)
-* [Github Pages website favicon not showing](https://stackoverflow.com/questions/46163065/github-pages-website-favicon-not-showing)
-
+* Kevin Powel, [Dealing with hover on mobile](https://www.youtube.com/watch?v=uuluAyw9AI0)
+* css-tricks.com, [Setting page Footer](https://css-tricks.com/couple-takes-sticky-footer/)
+* Colt Steele and Stephen Grider: [The Modern Javascript Bootcamp Course](https://www.udemy.com/course/javascript-beginners-complete-tutorial/)
+* Stack Overflow: [Change the text of a span element using JavaScript?](https://stackoverflow.com/questions/1358810/how-do-i-change-the-text-of-a-span-element-using-javascript)
+* Stack Overflow: [Adding an img element to a div with javascript](https://stackoverflow.com/questions/7802744/adding-an-img-element-to-a-div-with-javascript)
+* Stack Overflow, [Github Pages website favicon not showing](https://stackoverflow.com/questions/46163065/github-pages-website-favicon-not-showing)
 * [MDM](https://developer.mozilla.org/en-US/)
 * [W3 Schools](https://www.w3schools.com/)
-* [Stack Overflow](https://stackoverflow.com/)
 
 ### Movie Quotes
 * [Ameican Film Institute](https://www.afi.com/afis-100-years-100-movie-quotes/)
 * [The Top 50 Famous Movie Quotes](https://blog.hubspot.com/sales/famous-movie-quotes)
+
+### Gif Images
+* [Giphy](https://giphy.com/)
 
 ## Acknowledgements 
 * Martina Terlevic, my mentor for the guidance. 
