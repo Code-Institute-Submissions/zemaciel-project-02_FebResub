@@ -130,7 +130,7 @@ The only feedback the user receives indicating whether he answered correctly is 
 Although I appreciate a simple design, this one could use more graphs. Perhaps a photograph of a typewriting machine with the central section of the site as a sheet of paper. 
 
 
-## Testing
+# Testing
 
 I have manually tested the site on Chrome and Firefox on desktop computers with different screen sizes ( 27" and 13") on Chrome and Firefox on Android phones and tablet, and also using google dev tools.
 
