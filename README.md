@@ -84,42 +84,50 @@ The heading contains the title of the page and an icon. This section is not modi
 
 ### Game Area
 This section contains the quiz itself. It is constituted of the following:
-a quote (question)
-four movie titles (alternatives)
-number of the current quiz and total of questions
-scorecard (displayed after the first quiz is answered)
+* a quote (question)
+* four movie titles (alternatives)
+* number of the current quiz and total of questions
+* progress bar
+* scorecard showing whith awnser feedback(displayed after the first quiz is answered)
 
 The user is asked to match 10 quotes to the famous movie they are from. 
-The quotes and film titles are listed on the javascript file. Each movie quote has a multiple-choice of four possible movie titles. 
-Underneath, the number of the current question and the total of questions is displayed, indicating the game's progress.
-After the first quiz, a scorecard shows how many points the user has got— each question is worth 10 points. 
-Once the user selects an alternative, the quiz advances to the next question until the end. 
+The quotes and film titles are listed on the javascript file questions.js. Each movie quote has a multiple-choice of four possible movie titles. 
+Underneath, the number of the current question and the total of questions is displayed, indicating the game's progress. followed by a progress bar and  a scorecard shows how many points the user has got — each question is worth 10 points. 
+Once the user selects an alternative, the background of the score cards changes to green or red, indicatating if the awser as right or wrong. The quiz advances to the next question until the end. 
+![ progress bar and score cards](/assets/readme/feature_colour_feedback.png)
+
 
 ### EndGame
-When the users  anwsers the 10th quiz, the game area changes. 
-The quote, alternatives and the current quiz number are no longer displayed. Instead, the Game Area only shows the score and a goodbye message. 
+When the users anwsers the 10th quiz, they are directed to the End Game page. 
 
-After 10 seconds, the Game Area returns to the original state, and the score resets. 
+![ progress bar and score cards](/assets/readme/end_game.png)
+
+The user's score is displayes and if the performance was bad, average or good, one of three sets of images and messages is displayed. This is checked thru a Java Script function that also loads the correct images and messages.
+
+There is also an option to save the score in local storage, where the users inputs it's name and click on save. The user can also choose to play the game again. 
+
+### High Scores
+If the user chooses to save the score, they are directed to the page of High Scores, where the 5 higher scores in local storage are displayed, with the player's names. 
+
+### 404 Page
+An error page is displayed in case a page cannot be found on the web server. The page contains links to the main page and to the highscores page.
+
 
 ### Footer
 The minimalist footer contains only three icons for the author's website, LinkedIn and GitHub.
+
 
 ## Future Features
 The site, at its current state, presents a fully working simple quiz game. 
 While working on this project, I got ideas for making it more interesting. However, these features would add more complexity to the code and take more time to complete. So I listed a few of those ideas as future features.
 
 ### Improve feedback for correct and incorrect answers
-The only feedback the user receives indicating whether he answered correctly is the scorecard's points. That could be more elaborate to make the site more attractive. Some suggestions would be:
+The only feedback the user receives indicating whether he answered correctly is the scorecard's points and the colour feedback (green and red). That could be more elaborate to make the site more attractive. Some suggestions would be:
 * Play different sounds for a correct or incorrect answer. To stay on theme, it could be the sound of a typewriting bell for a correct answer and a kneading paper sound for the wrong one.
-* Play the audio or video clip with the original movie quote just after the user selects the solution.
-* When clicking or tapping the wrong alternative, instead of going straight to the next question, the site could highlight the correct one in one colour (green, for example), highlight the wrong selected option in another colour (red), and fade the colours of the other alternatives. 
+* Play the audio or video clip with the original movie quote or a image of the movie just after the user selects the awnser.
+* The site could highlight the correct alternative in one colour and and the wrong selected option in another colour (red), and fade the colours of the other alternatives. 
 ### Improve the design 
 Although I appreciate a simple design, this one could use more graphs. Perhaps a photograph of a typewriting machine with the central section of the site as a sheet of paper. 
-
-### Player name and sharing score
-A feature to help promote the site would be allowing the user to share his score and invite friends to play.
-Before starting the quiz, the user would input his name. After playing, the site would generate a personalised message, showing the user's name and score, with buttons to share the quiz result on social media channels, Whats App and email.
-
 
 
 ## Testing
@@ -142,9 +150,9 @@ No errors were returned when passing through the [Jigsaw validator](https://jigs
 ![](/assets/readme/css_validator.png)
 
 ### Lighthouse Testing
-Lighthouse gave a performance score inferior to 89 points. However, in all other criteria, the score was about 90.
+Lighthouse gave a performance score inferior to 70 points for the highscore pages. However, in all other criteria, the score was about 80.
 <br> 
-![](/assets/readme/lightouse.png)
+![](/assets/readme/lighthouse.png)
 
 
 ## Main Languages and Applications Used
@@ -170,7 +178,8 @@ The page reloads with the link to the project: https://zemaciel.github.io/projec
 ## Credits
 As this is the first time I am learning Javascript, I sought other learning resources to complement my studies. Colt Steele and Stephen Grider's courses on Udemy and CoderLipi classes on YouTube were particularly helpful.
 <br>
-I have researched several online quizzes developed in JavaScript and quiz tutorials on building this project, including projects of other Code Institute students. Among all the sources I came across, a video class by Professor Edson Braga was one that I followed to structure the JavaScrip code for this quiz.
+I have researched several online quizzes developed in JavaScript and quiz tutorials on building this project, including projects of other Code Institute students. Among all the sources I came across, a video class by Professor Edson Braga was one that I followed to set the mais structure for the JavaScrip code for this quiz.
+I have aditional features like a progress bar and the display and save scores on local storage. For those, the tuotorials by James Quick were very useful. 
 
 ### Quiz Tutorials and Codes
 * Edson Braga, Application in Java Script, Quiz (Portuguese) [Class 20](https://youtu.be/Ph_1k5d1y_s) 

@@ -309,8 +309,7 @@ input::placeholder {
   margin: 15px;
 }
 
-.final-image {
-  img {
+.final-image img {
     border-radius: 20px;
     box-shadow: 5px 5px 10px #222222;
     max-width: 350px;
@@ -388,7 +387,7 @@ input::placeholder {
   h2 {
     font-family: 'Special Elite', serif;
     font-weight: 400;
-    font-size: 1 rem;
+    font-size: 1rem;
     color: #222222;
   }
   
