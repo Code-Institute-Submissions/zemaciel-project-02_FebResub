@@ -29,12 +29,9 @@ saveHighScore = (e) => {
 
 // check palyers score
 let thisGameScore = parseInt(mostRecentScore);
-console.log("This is the end " + mostRecentScore);
-console.log(typeof (mostRecentScore))
-console.log(thisGameScore + (typeof (thisGameScore)))
 
 //custom feedback based on score
-feedbackTxtResul = ""
+feedbackTxtResul = "";
 
 if (thisGameScore <= 40) {
     feedbackTxtResul = "Bad Luck! Try again?";

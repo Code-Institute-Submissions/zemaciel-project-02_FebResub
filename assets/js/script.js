@@ -1,32 +1,26 @@
-let scoreCard = document.querySelector('#score_card');
+let scoreCard = document.querySelector("#score_card");
 let points = 0;
 let score = 0;
 
 // Progress Bar
-const progressText = document.getElementById('progressText');
-const progressBarFull = document.getElementById('progressBarFull');
+const progressBarFull = document.getElementById("progressBarFull");
 
 //Movie quotes and Quiz Number
-let numQuiz = document.querySelector('#numQuiz');
-let quote = document.querySelector('#quote');
+let numQuiz = document.querySelector("#numQuiz");
+let quote = document.querySelector("#quote");
 
 // Films titles as alternatives
-let a = document.querySelector('#a');
-let b = document.querySelector('#b');
-let c = document.querySelector('#c');
-let d = document.querySelector('#d');
+let a = document.querySelector("#a");
+let b = document.querySelector("#b");
+let c = document.querySelector("#c");
+let d = document.querySelector("#d");
 
-// let articleMovieQuotes = document.querySelector(".movieQuotes");
-let  scoreColorBg = document.querySelector(".applyColor");
-// let filmList = document.querySelector('#filmList');
-// let introDescription = document.querySelector("#introDescription");
+let scoreColorBg = document.querySelector(".applyColor");
 
+let counting = document.querySelector("#counting");
+let total = document.querySelector("#total");
 
-let counting = document.querySelector('#counting');
-let total = document.querySelector('#total');
-
-// counting.textContent = q1.numQuiz;
-
+// Counting.textContent = q1.numQuiz;
 let totalMovieQuotes = (movieQuotes.length) - 1;
 total.textContent = totalMovieQuotes;
 
@@ -39,11 +33,10 @@ c.textContent = q1.filmC;
 d.textContent = q1.filmD;
 
 // Setting values for questions
-a.setAttribute('value', '1A');
-b.setAttribute('value', '1B');
-c.setAttribute('value', '1C');
-c.setAttribute('value', '1C');
-d.setAttribute('value', '1D');
+a.setAttribute("value", "1A");
+b.setAttribute("value", "1B");
+c.setAttribute("value", "1C");
+d.setAttribute("value", "1D");
 
 //Next Questions
 function nextOuote(nQuiz) {
@@ -54,10 +47,10 @@ function nextOuote(nQuiz) {
     b.textContent = movieQuotes[nQuiz].filmB;
     c.textContent = movieQuotes[nQuiz].filmC;
     d.textContent = movieQuotes[nQuiz].filmD;
-    a.setAttribute('value', nQuiz + 'A');
-    b.setAttribute('value', nQuiz + 'B');
-    c.setAttribute('value', nQuiz + 'C');
-    d.setAttribute('value', nQuiz + 'D');
+    a.setAttribute("value", nQuiz + "A");
+    b.setAttribute("value", nQuiz + "B");
+    c.setAttribute("value", nQuiz + "C");
+    d.setAttribute("value", nQuiz + "D");
 }
 
 function blockChoices() {
@@ -75,22 +68,20 @@ function unblockChoices() {
 }
 
 // Show the user if his awnser was correct or incorrect
-function correctClass (){
-    scoreColorBg.classList.remove('incorrect');
-    scoreColorBg.classList.add('correct');
+function correctClass() {
+    scoreColorBg.classList.remove("incorrect");
+    scoreColorBg.classList.add("correct");
 }
 
-function incorrectClass (){
-    scoreColorBg.classList.remove('correct');
-    scoreColorBg.classList.add('incorrect');
+function incorrectClass() {
+    scoreColorBg.classList.remove("correct");
+    scoreColorBg.classList.add("incorrect");
 }
 
-function removeClass (){
-    scoreColorBg.classList.remove('correct');
-    scoreColorBg.classList.remove('incorrect');
+function removeClass() {
+    scoreColorBg.classList.remove("correct");
+    scoreColorBg.classList.remove("incorrect");
 }
-
-// setAttribute('src','caminho-da-imagem')
 
 function checkResult(nQuiz, filmAnswer) {
     let numberOfQuiz = nQuiz.value;
@@ -100,19 +91,16 @@ function checkResult(nQuiz, filmAnswer) {
     //Update the progress bar
     progressBarFull.style.width = `${(numberOfQuiz / totalMovieQuotes) * 100}%`;
 
-
     if (usersAwnser == rightFilm) {
         points += 10;
         correctClass();
-    }
-    else {
+    } else {
         incorrectClass();
     }
 
     setTimeout(() => {
         removeClass();
     }, 1000);
-
 
     // Score
     score = points;
@@ -122,11 +110,10 @@ function checkResult(nQuiz, filmAnswer) {
     blockChoices();
 
     setTimeout(function () {
-        nextQuiz = numberOfQuiz + 1
+        nextQuiz = numberOfQuiz + 1;
         if (nextQuiz > totalMovieQuotes) {
             gameOver();
-        }
-        else {
+        } else {
             nextOuote(nextQuiz);
         }
     }, 1000);
@@ -135,11 +122,8 @@ function checkResult(nQuiz, filmAnswer) {
 }
 
 function gameOver() {
-    numQuiz.textContent = ""
+    numQuiz.textContent = "";
     localStorage.setItem("mostRecentScore", score);
     //Go to the end page
     return window.location.assign("end_game.html");
 }
-
-
-// console.log("Number of Questions " + totalMovieQuotes);

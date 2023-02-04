@@ -90,16 +90,6 @@ const q8 = {
 
 const q9 = {
     numQuiz: 9,
-    quote: "Yo, Adrian!",
-    filmA: "The Blues Brothers",
-    filmB: "Rocky",
-    filmC: "Knives Out",
-    filmD: "Rocketman",
-    correct: "Rocky",
-};
-
-const q10 = {
-    numQuiz: 10,
     quote: "Houston, we have a problem.",
     filmA: "Apollo 13",
     filmB: "Dallas Buyers Club",
@@ -108,7 +98,7 @@ const q10 = {
     correct: "Apollo 13",
 };
 
-const q11 = {
+const q10 = {
     numQuiz: 10,
     quote: "Rosebud.",
     filmA: "The Constant Gardener",
@@ -118,4 +108,4 @@ const q11 = {
     correct: "Citizen Kane",
 };
 
-const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q10, q11];
+const movieQuotes = [q0, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10];
