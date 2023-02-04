@@ -126,6 +126,9 @@ Before starting the quiz, the user would input his name. After playing, the site
 
 I have manually tested the site on Chrome and Firefox on desktop computers with different screen sizes ( 27" and 13") on Chrome and Firefox on Android phones and tablet, and also using google dev tools.
 
+### JSHitnt
+All the Java Script files were checked on [JShint.com](https://jshint.com/). The major issues, like missing semicolons or unused variables, were fixed. However, there are still warnings that undefined and unused variables were present on the script.js. As those variables are part of other files in this app, I've ignored these warrings and the ones regarding the ES6 version. 
+
 
 ### HTML Validator
 No errors were returned when passing through the [W3C Validator](https://validator.w3.org/).
